@@ -1,0 +1,20 @@
+gonghui-elasticsearch:
+  container_name: gonghui-elasticsearch
+  image: elasticsearch:1.7.3
+  # volumes:
+  #   - ~/volumes/jhipster/gonghui/elasticsearch/:/usr/share/elasticsearch/data/
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+gonghui-mysql:
+  container_name: gonghui-mysql
+  image: mysql:5.7.9
+  # volumes:
+  #   - ~/volumes/jhipster/gonghui/mysql/:/var/lib/mysql/
+  environment:
+    - MYSQL_USER=root
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_DATABASE=gonghui
+  ports:
+    - "3306:3306"
+  command: mysqld --lower_case_table_names=1

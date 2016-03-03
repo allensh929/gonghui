@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "gonghui",
+    "packageName": "com.ali.gonghui",
+    "packageFolder": "com/ali/gonghui",
+    "authenticationType": "oauth2",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "gulp",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "6ddcf0a7713082c8926e0a1d07315c96bd4f90db",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
